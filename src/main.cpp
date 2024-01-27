@@ -189,7 +189,7 @@ void oledDisplay()
 	oled.println("temperature: ");
 	oled.setTextSize(2);
 	oled.print(tempC);
-	oled.print(" ");
+	oled.print("");
 	oled.setTextSize(1);
 	oled.print(char(223));
 	oled.setTextSize(2);
@@ -215,7 +215,7 @@ void oledDisplay()
 	oled.println("Humidity: ");
 	oled.setTextSize(2);
 	oled.print(humi);
-	oled.println(" %");
+	oled.println("%");
 
 	if (modeNumber > 0)
 	{
