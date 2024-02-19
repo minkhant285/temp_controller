@@ -252,20 +252,20 @@ void controlRelays()
 
 	if (tempC > t_upperOffset)
 	{
-		digitalWrite(RELAY_1_PIN, HIGH);
+		digitalWrite(RELAY_1_PIN, HIGH); // change LOW if use active LOW realay
 	}
 	else
 	{
-		digitalWrite(RELAY_1_PIN, LOW);
+		digitalWrite(RELAY_1_PIN, LOW); // change HIGH if use active LOW realay
 	}
 
 	if (tempC < t_lowerOffset)
 	{
-		digitalWrite(RELAY_2_PIN, HIGH);
+		digitalWrite(RELAY_2_PIN, HIGH); // change LOW if use active LOW realay
 	}
 	else
 	{
-		digitalWrite(RELAY_2_PIN, LOW);
+		digitalWrite(RELAY_2_PIN, LOW); // change HIGH if use active LOW realay
 	}
 }
 
