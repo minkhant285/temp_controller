@@ -4,9 +4,10 @@
 #include <Adafruit_SSD1306.h>
 #include <dht.h>
 #include <EEPROM.h>
+// itverse
 
+#define DT 3
 #define CLK 2
-#define DT 10
 
 int counter = 0;
 int currentStateCLK;
@@ -19,12 +20,12 @@ String currentDir = "";
 #define i2c_Address 0x3c
 
 #define DHTPIN 5	  // pin connected to DHT22 sensor
-#define RELAY_1_PIN 3 // Relay 1 control pin
-#define RELAY_2_PIN 4 // Relay 2 control pin
-#define RELAY_3_PIN 8
-#define RELAY_4_PIN 9
+#define RELAY_1_PIN 7 // Relay 1 control pin
+#define RELAY_2_PIN 8 // Relay 2 control pin
+#define RELAY_3_PIN 9
+#define RELAY_4_PIN 10
 
-#define Mode_Btn_Pin 7
+#define Mode_Btn_Pin 4
 #define Select_Btn_Pin 6
 
 Adafruit_SSD1306 oled(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
